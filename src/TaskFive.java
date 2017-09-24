@@ -4,18 +4,17 @@ public class TaskFive {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите значение до которого нужно считать");
-        int a = scanner.nextInt();
-        int i = 0;
-        Count(a, i);
+        int X = scanner.nextInt();
+
+        System.out.println(count( X ));
     }
 
-    public static String Count (int a, int i) {
+    public static String count (int X) {
 
-        i++;
-        System.out.println(i);
-        if (i < a)
-            return Count(a, i);
-        return null;
+
+        if (X==1)
+            return "1";
+        return count(X-1) + "\n" + X;
         }
 
 

@@ -4,7 +4,7 @@ public class TaskFour {
 
 
     static int getMax (int a, int b){                   // выполнение для инта
-        int max = a>b ? a : b;
+        int max = a > b ? a : b;
        return max;
     }
     static float getMax (float a, float b) {             // выполнение для флоата

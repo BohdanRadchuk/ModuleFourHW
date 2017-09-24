@@ -7,7 +7,6 @@ public class TaskTwo {
         }
     }
     public static void main(String[] args) {
-
         drawRectangle(6,5);
     }
 }

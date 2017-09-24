@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TaskOne {
-    public static void Count () {
+    public static void count () {
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите значение до которого нужно считать");
         int num = scanner.nextInt();
@@ -9,6 +9,6 @@ public class TaskOne {
             System.out.println(i);
     }
     public static void main(String[] args) {
-        Count();
+        count();
     }
 }
