@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TaskSeven {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-       for (int questrepeat = 1 ; questrepeat == 1; questrepeat = scanner.nextInt() ) {
+       for (String questrepeat = "yes" ; questrepeat.equals("yes"); questrepeat = scanner.nextLine() ) {
            System.out.println("Какое задание хотите выполнить (от 1 до 6)");
            int tasknumber = scanner.nextInt();
            if (tasknumber <= 6) {               //проверка на вводимое значение
@@ -52,12 +52,13 @@ public class TaskSeven {
                     int t = l;
                    System.out.println(drawRectangle1(l, h, t));
                }
-           } else {
+           }
+           else {
                System.out.println("вы ввели не правильное значение");
 
            }
-           System.out.println("вы хотите выполнить ещё 1 задание ? (type 1 to repeat)");
-
+           System.out.println("вы хотите выполнить ещё 1 задание ? (type \"yes\" to repeat)");
+           scanner.nextLine();
 
        }
         }
