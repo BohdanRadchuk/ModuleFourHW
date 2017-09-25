@@ -45,7 +45,9 @@ public class TaskSeven {
 
                }
                if (tasknumber == 6){
+                   System.out.println("введите длину прямоугольника");
                     int l = scanner.nextInt();
+                   System.out.println("введите высотупрямоугольника");
                     int h = scanner.nextInt();
                     int t = l;
                    System.out.println(drawRectangle1(l, h, t));
